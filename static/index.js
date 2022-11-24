@@ -7,7 +7,7 @@ $(document).ready(function() {
         let request = inviaRichiesta("GET", "/api/richiesta1", { "nome": "Aurora" });
         request.done(function(data) {
            div.empty()
-		   div.text(JSON.stringify(data, null, 2)
+		   div.text(JSON.stringify(data))
         });
         request.fail(errore)
     });
@@ -16,7 +16,7 @@ $(document).ready(function() {
         let request = inviaRichiesta("PATCH", "/api/richiesta2", {"nome": "Unico", "nVampiri": 3});
         request.done(function(data) {
            div.empty()
-		   div.text(JSON.stringify(data, null, 2)
+		   div.text(JSON.stringify(data))
         });
         request.fail(errore)
     });
@@ -25,7 +25,8 @@ $(document).ready(function() {
         let request = inviaRichiesta("GET", "/api/richiestaParams/m/brown");
         request.done(function(data) {
            div.empty()
-		   div.text(JSON.stringify(data, null, 2)
+		   for(let item of data)
+			div.text(div.text() + JSON.stringify(item))
         });
         request.fail(errore)
     });
