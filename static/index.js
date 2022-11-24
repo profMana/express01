@@ -1,7 +1,7 @@
 "use strict"
 $(document).ready(function() {
 	
-	let div = $("div"")
+	let div = $("div")
 
     $("#btnGet").on("click", function() {
         let request = inviaRichiesta("GET", "/api/richiesta1", { "nome": "Aurora" });
