@@ -25,8 +25,8 @@ $(document).ready(function() {
         let request = inviaRichiesta("GET", "/api/richiestaParams/m/brown");
         request.done(function(data) {
            div.empty()
-		   for(let item of data)
-			div.text(div.text() + JSON.stringify(item))
+		   for(let item of data) 
+			 $("<div>").text(JSON.stringify(item)).appendTo(div)
         });
         request.fail(errore)
     });

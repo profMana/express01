@@ -111,8 +111,8 @@ const WHITELIST = ["https://progetto-mana.web.app", "http://localhost:4200",
 const whitelist = [
 			"http://localhost:1337", 
 			"https://localhost:1338", 
-			"http://robertomana-express01.onrender.com"
-			"https://robertomana-express01.onrender.com"			
+			"http://robertomana-express01.onrender.com",
+			"https://robertomana-express01.onrender.com",		
             "http://localhost:4200"
 				  ];
 const corsOptions = {
