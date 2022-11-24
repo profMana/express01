@@ -108,8 +108,13 @@ app.set("json spaces", 4)
 const WHITELIST = ["https://progetto-mana.web.app", "http://localhost:4200", 
    "http://192.168.178.105:4200", "http://localhost:8000", 
    "http://192.168.178.105:8000"]; // list of allow domain
-const whitelist = ["http://localhost:1337", "https://localhost:1337", 
-                   "http://192.168.137.1:8080", "https://192.168.137.1:1337"];
+const whitelist = [
+			"http://localhost:1337", 
+			"https://localhost:1338", 
+			"http://robertomana-crudserver.onrender.com",
+			"https://robertomana-crudserver.onrender.com",
+            "http://localhost:4200"
+				  ];
 const corsOptions = {
     origin: function(origin:any, callback:any) {
         if (!origin) {
